@@ -2,9 +2,8 @@ body {
     background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-    
-    overflow: hidden;
+    overflow-x: hidden; /* Ensures no horizontal scrolling */
+    overflow-y: hidden;
 }
 
 .ball {
@@ -53,33 +52,31 @@ body {
 }
 
 @keyframes moveRight {
-    0% { transform: translateX(-350px); opacity: 1; }
+    0% { transform: translateX(-150px); opacity: 1; }
     100% { transform: translateX(100vw); opacity: 1; }
 }
 
 @keyframes moveLeft {
-    0% { transform: translateX(50vw); opacity: 1; }
-    100% { transform: translateX(-110vw); opacity: 1; }
+    0% { transform: translateX(100vw); opacity: 1; }
+    100% { transform: translateX(-150px); opacity: 1; }
 }
 
 .cloud-1 {
     top: 10%;
     left: -30px;
     animation: moveRight 45s linear infinite;
-    z-index: 2;
 }
 
 .cloud-2 {
     top: 30%;
-    left: -400px;
+    left: -200px;
     animation: moveRight 50s linear infinite;
     animation-delay: 5s;
-
 }
 
 .cloud-3 {
     top: 50%;
-    left: -450px;
+    left: -250px;
     animation: moveRight 55s linear infinite;
     animation-delay: 10s;
 }
@@ -92,10 +89,11 @@ body {
 
 .cloud-5 {
     top: 40%;
-    right: -400px;
+    right: -200px;
     animation: moveLeft 42s linear infinite;
     animation-delay: 8s;
 }
+
 #BodyC{
     position: relative;
 
@@ -286,17 +284,19 @@ margin-bottom: 1%;
 /* Mobile Phones */
 @media screen and (max-width: 768px) {
 
-
-    @keyframes moveLeft {
-    0% { transform: translateX(100vw); opacity: 1; }
-    100% { transform: translateX(-150px); opacity: 1; }
-}
-    
-    body{
-         width: 100%;
-       overflow: hidden;
-        overflow-x: hidden;
+body {
+        width: 100%;
+        overflow-x: hidden; /* Reinforce horizontal overflow prevention */
     }
+
+    .cloud-4 {
+        display: block; /* Allow the cloud to show */
+    }
+
+    .cloud-2 {
+        display: block;
+    }
+}
     
     #BodyC {
     display: flex;
@@ -310,12 +310,7 @@ margin-bottom: 1%;
         height: 100px;
     }
 
-    .cloud-4 {
-        display: none;
-    }
-    .cloud-2{
-        display: none;
-    }
+    
 
     #card, #Wcard {
         width: 95%;
