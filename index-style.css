@@ -316,9 +316,10 @@ margin-bottom: 1%;
         margin-top: 15%;
         align-items: center;
     }
+    /*huhyhyhyh*/
 @keyframes moveLeft {
-        0% { transform: translateX(100vw); opacity: 1; }
-        100% { transform: translateX(-150px); opacity: 1; }
+        0% { transform: translateX(100vw); opacity: 0; }
+        100% { transform: translateX(-150px); opacity: 0; }
     }
     #main, #Wmain {
         padding: 8%;
