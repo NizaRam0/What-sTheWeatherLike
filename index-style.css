@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     
@@ -54,7 +54,7 @@ body {
 
 @keyframes moveRight {
     0% { transform: translateX(-350px); opacity: 1; }
-    100% { transform: translateX(190vw); opacity: 1; }
+    100% { transform: translateX(100vw); opacity: 1; }
 }
 
 @keyframes moveLeft {
@@ -285,6 +285,13 @@ margin-bottom: 1%;
 
 /* Mobile Phones */
 @media screen and (max-width: 768px) {
+
+
+    @keyframes moveLeft {
+    0% { transform: translateX(100vw); opacity: 1; }
+    100% { transform: translateX(-150px); opacity: 1; }
+}
+    
     body{
          width: 100%;
        overflow: hidden;
