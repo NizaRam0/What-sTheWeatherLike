@@ -290,6 +290,13 @@ margin-bottom: 1%;
        overflow: hidden;
         overflow-x: hidden;
     }
+    #BodyC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
     .ball {
         width: 120px;
         height: 100px;
