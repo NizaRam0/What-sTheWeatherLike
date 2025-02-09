@@ -290,6 +290,7 @@ margin-bottom: 1%;
        overflow: hidden;
         overflow-x: hidden;
     }
+    
     #BodyC {
     display: flex;
     justify-content: center;
@@ -315,7 +316,10 @@ margin-bottom: 1%;
         margin-top: 15%;
         align-items: center;
     }
-
+@keyframes moveLeft {
+        0% { transform: translateX(100vw); opacity: 1; }
+        100% { transform: translateX(-150px); opacity: 1; }
+    }
     #main, #Wmain {
         padding: 8%;
     }
