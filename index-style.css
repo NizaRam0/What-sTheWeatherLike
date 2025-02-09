@@ -233,6 +233,10 @@ margin-bottom: 1%;
     font-size: 20px;
 }
 @media screen and (max-width: 1024px) {
+    body{
+        overflow: hidden;
+        overflow-x: hidden;
+    }
     #card, #Wcard {
         width: 90%;
         height: auto;
@@ -278,7 +282,8 @@ margin-bottom: 1%;
 /* Mobile Phones */
 @media screen and (max-width: 768px) {
     body{
-        overflow: hidden;
+       overflow: hidden;
+        overflow-x: hidden;
     }
     .ball {
         width: 120px;
