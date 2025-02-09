@@ -1,0 +1,342 @@
+body {
+    background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 160px;
+    height: 140px;
+    background-color: orange;
+    box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset;
+    z-index: 1; /* Sun on top */
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.751);
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    z-index: 0; /* Clouds behind the box */
+}
+
+.cloud::after {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+}
+
+.cloud::before {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    top: -90px;
+    right: 40px;
+}
+
+@keyframes moveRight {
+    0% { transform: translateX(-350px); opacity: 1; }
+    100% { transform: translateX(190vw); opacity: 1; }
+}
+
+@keyframes moveLeft {
+    0% { transform: translateX(50vw); opacity: 1; }
+    100% { transform: translateX(-110vw); opacity: 1; }
+}
+
+.cloud-1 {
+    top: 10%;
+    left: -30px;
+    animation: moveRight 45s linear infinite;
+    z-index: 2;
+}
+
+.cloud-2 {
+    top: 30%;
+    left: -400px;
+    animation: moveRight 50s linear infinite;
+    animation-delay: 5s;
+
+}
+
+.cloud-3 {
+    top: 50%;
+    left: -450px;
+    animation: moveRight 55s linear infinite;
+    animation-delay: 10s;
+}
+
+.cloud-4 {
+    top: 20%;
+    right: -30px;
+    animation: moveLeft 38s linear infinite;
+}
+
+.cloud-5 {
+    top: 40%;
+    right: -400px;
+    animation: moveLeft 42s linear infinite;
+    animation-delay: 8s;
+}
+#BodyC{
+    position: relative;
+
+
+
+}
+#card, #Wcard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 7%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 9px 9px 90px rgba(255, 255, 255, 0.107);
+    z-index: 4;
+}
+
+/* Styling for #card */
+#card {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.026);
+    color: white;
+}
+
+/* Styling for #Wcard */
+#Wcard {
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    color: white;
+    display: none; /* Initially hidden */
+}
+
+#main{
+    padding: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#loc{
+    
+    text-align: center;
+    font-size: 65px;
+}
+#Weather-Form{
+    display: flex;
+    width:100%;
+
+}
+
+#txt{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+    height: 50px;
+    border: none;
+    background-color:transparent;
+}
+#txt:hover{
+    border: #ffffff5b;
+    cursor: text;
+    opacity: 0.9;
+}
+#txt::placeholder{
+    font-size: 30px;
+color: #ffffff5b;
+font-weight: bold;
+}
+#sub{
+    background: #ffffff5b;
+    border-radius: 25px;
+    border: none;
+    width:30%;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 20px;
+
+}
+#sub:hover{
+    transform: translateY(2px);
+    opacity: 0.3;
+}
+
+
+#Wmain{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#clock,#desc{
+    color: #878787;
+    text-align: center;
+    font-size: 40px;
+    margin-top:1% ;
+    margin-bottom: 1%;
+}
+#temp,#Wloc{
+    color: #adabab;
+    text-align: center;
+    font-size: 60px;
+margin-bottom: 1%;
+    margin-top:1%;
+}
+
+
+.errDisplay{
+    text-align: center;
+    color: red;
+
+}
+
+#pluses{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 53% 60% ;
+    grid-template-rows: 30% 30%;
+    column-gap: 10%;
+    row-gap: 15%;
+
+}
+
+#FL,#WS,#SR,#SS {
+    color: #adabab;
+    text-align: start;
+    font-size: 20px;
+}
+#AH,#AP{
+    color: #878787;
+    text-align: start;
+    font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+    #card, #Wcard {
+        width: 90%;
+        height: auto;
+    }
+
+    #loc {
+        font-size: 50px;
+    }
+
+    #txt {
+        font-size: 24px;
+        height: 40px;
+    }
+
+    #txt::placeholder {
+        font-size: 24px;
+    }
+
+    #sub {
+        font-size: 18px;
+        width: 35%;
+    }
+
+    #temp, #Wloc {
+        font-size: 50px;
+    }
+
+    #clock, #desc {
+        font-size: 35px;
+    }
+
+    #pluses {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        row-gap: 10%;
+    }
+
+    #FL, #WS, #SR, #SS, #AH, #AP {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+    .ball {
+        width: 120px;
+        height: 100px;
+    }
+
+    .cloud-4 {
+        display: none;
+    }
+    .cloud-2{
+        display: none;
+    }
+
+    #card, #Wcard {
+        width: 95%;
+        height: auto;
+        margin-top: 15%;
+        align-items: center;
+    }
+
+    #main, #Wmain {
+        padding: 8%;
+    }
+
+    #loc {
+        font-size: 30px;
+    }
+
+    #txt {
+        font-size: 20px;
+        height: 35px;
+    }
+
+    #txt::placeholder {
+        font-size: 20px;
+    }
+
+    #sub {
+        font-size: 16px;
+        width: 40%;
+    }
+
+    #temp, #Wloc {
+        font-size: 40px;
+    }
+
+    #clock, #desc {
+        font-size: 28px;
+    }
+
+    #pluses {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto ;
+        row-gap:3% ;
+    }
+
+    #FL, #WS, #SR, #SS, #AH, #AP {
+        font-size: 16px;
+        
+    }
+}

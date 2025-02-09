@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Real-time weather updates and forecasts. Get the latest weather information for your location.">
+<meta name="keywords" content="weather, forecast, weather updates, local weather, weather app">
+<meta name="author" content=" Nizar Ramadan ">
+<link rel="icon" type="image/png" href="../media/weatherFavicon-removebg-preview.png">
+<link rel="stylesheet" href="../StyleSheets/index-style.css">
+<link rel="stylesheet" href="../StyleSheets/nightStyle.css">
+<link rel="stylesheet" href="../StyleSheets/rainStyle.css">
+<link rel="stylesheet" href="../StyleSheets/Style.css">
+<meta name="theme-color" content="#ff5733">
+
+    <title>Home</title>
+    
+</head>
+<body>
+   
+    <div class="rain"></div>
+    <div class="ball"></div> 
+    <div class="moon">
+        <div class="star-1"></div>
+        <div class="star-2"></div> 
+        </div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <section id="bodyC">
+
+        <div id="card">    
+        <section id="main">
+            <h1 id="loc">Enter Your City</h1>    
+            <form id="Weather-Form">
+            <input type="text" name="" id="txt" placeholder="City">
+            <input type="submit"name="" id="sub" value="Search">
+            </form>
+        </section>
+        </div>
+
+    
+
+        <div id="Wcard">    
+        <section id="Wmain">
+            <h1 id="Wloc">
+                City
+
+            </h1>  
+            <h2 id="clock">
+                N/A:N/A
+                
+            </h2>  
+            <h1 id="temp" >
+                N/A°C
+                
+            </h1>  
+            <h2 id="desc" >icon<img id="icn"></h2>
+            
+        <div id="pluses"> 
+            <h3 class="det" id="FL"> Feels Like: N/A  </h3>
+            <h3 class="det" id="WS"> Wind Speed : N/A  </h3>
+            <h3 class="det" id="AH"> Air Humidity : N/A  </h3>
+            <h3 class="det" id="AP"> Atmo Pressure : N/A  </h3>
+            <h3 class="det" id="SR"> Sun Rise : N/A  </h3>
+            <h3 class="det" id="SS"> Sun Set : N/A  </h3>
+            
+        
+        </div>
+        </section>
+        </div>
+    </div>
+        </section>
+        <!---<div class="thunder">
+            <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas3"></canvas>
+        </div> -->
+        <section class="snow">
+        <div class="snowMan">
+            <div class="innerSnow">
+              <div class="snowBall"></div>
+              <div class="snowBall"></div>
+              <div class="snowBall"></div>
+            </div>
+          </div>
+          <div class="snowMan noBlur">
+            <div class="innerSnow">
+              <div class="snowBall"></div>
+              <div class="snowBall"></div>
+              <div class="snowBall"></div>
+            </div>
+          </div>
+          <div class="snowFace">
+            <div class="eye"></div>
+            <div class="eye"></div>
+            <div class="nose"></div>
+            <div class="twigWrapper">
+              <div class="twig shade"></div>
+              <div class="twig"></div>
+              <div class="twigi"></div>
+            </div>
+          </div>
+          <div class="snowFall">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="snowFall delayMe">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="snowFall biggerSnow">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="snowFall delayMe biggerSnow">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+    </section>
+    <script src="../JScript/index.js"></script>
+    <script src="../JScript/rain.js"></script>
+    <script src="../JScript/script.js"></script>
+</body>
+</html>
