@@ -19,7 +19,6 @@ A simple and responsive weather website built with **HTML**, **CSS**, and **Java
 
 ## 🚀 How to Use
 
-```markdown
 1. Clone the repository:
    ```bash
-   git clone https://github.com/NizaRam0/What-sTheWeatherLike.git
+   git clone <[repository-url](https://github.com/NizaRam0/What-sTheWeatherLike.git)>
