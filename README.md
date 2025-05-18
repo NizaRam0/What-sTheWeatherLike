@@ -21,4 +21,4 @@ A simple and responsive weather website built with **HTML**, **CSS**, and **Java
 
 1. Clone the repository:
    ```bash
-   git clone https://nizaram0.github.io/What-sTheWeatherLike/
+   git clone https://github.com/NizaRam0/What-sTheWeatherLike.git
